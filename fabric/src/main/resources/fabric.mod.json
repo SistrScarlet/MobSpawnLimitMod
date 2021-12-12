@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "mobspawnlimit",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "MobSpawnLimit Mod",
+  "description": "モブのスポーン数の制限のModです。",
   "authors": [
-    "Me!"
+    "Sistr"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://forum.civa.jp/viewtopic.php?f=3&t=119",
+    "sources": "https://github.com/SistrScarlet/MobSpawnLimitMod"
   },
-  "license": "Insert License Here",
+  "license": "CC0",
   "icon": "assets/examplemod/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "net.sistr.mobspawnlimit.fabric.FabricModEntryPoint"
     ]
   },
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.12.11",
     "fabric": "*",
-    "minecraft": ">=1.16.4",
-    "architectury": ">=1.1.55"
+    "minecraft": ">=1.18.1",
+    "architectury": ">=3.2.51"
   },
   "suggests": {
     "flamingo": "*"

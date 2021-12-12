@@ -1,35 +1,33 @@
 modLoader = "javafml"
-loaderVersion = "[37,)"
+loaderVersion = "[39,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "CC0"
 
 [[mods]]
-modId = "examplemod"
+modId = "mobspawnlimit"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
-description = '''
-This is an example description! Tell everyone what your mod is about!
-'''
+displayName = "MobSpawnLimit Mod"
+authors = "Sistr"
+description = "モブのスポーン数の制限のModです。"
 #logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.mobspawnlimit]]
 modId = "forge"
 mandatory = true
-versionRange = "[37,)"
+versionRange = "[39,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.mobspawnlimit]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.17.1,)"
+versionRange = "[1.18.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.mobspawnlimit]]
 modId = "architectury"
 mandatory = true
-versionRange = "[2.3.23,)"
+versionRange = "[3.2.51,)"
 ordering = "AFTER"
 side = "BOTH"
