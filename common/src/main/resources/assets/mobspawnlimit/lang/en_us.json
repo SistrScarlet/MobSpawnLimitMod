@@ -1,0 +1,22 @@
+{
+    "option.mobspawnlimit.subcategory_monster": "Monster",
+    "option.mobspawnlimit.subcategory_creature": "Creature",
+    "option.mobspawnlimit.subcategory_ambient": "Ambient",
+    "option.mobspawnlimit.subcategory_axolotls": "Axolotls",
+    "option.mobspawnlimit.subcategory_underground_water_creature": "Underground Water Creature",
+    "option.mobspawnlimit.subcategory_water_creature": "Water Creature",
+    "option.mobspawnlimit.subcategory_water_ambient": "Water Ambient",
+    "option.mobspawnlimit.subcategory_misc": "Misc",
+
+    "option.mobspawnlimit.capacity": "Capacity",
+    "option.mobspawnlimit.capacity_tooltip": "Maximum capacity for mobs to spawn naturally.",
+    "option.mobspawnlimit.peaceful": "Peaceful",
+    "option.mobspawnlimit.peaceful_tooltip": "Whether or not to despawn at Peaceful.",
+    "option.mobspawnlimit.rare": "Rare",
+    "option.mobspawnlimit.rare_tooltip": "Whether or not to spawn naturally.",
+    "option.mobspawnlimit.immediate_despawn_range": "Immediate Despawn Range",
+    "option.mobspawnlimit.immediate_despawn_range_tooltip": "Distance to immediate despawn.",
+    "option.mobspawnlimit.despawn_start_range": "Despawn Start Range",
+    "option.mobspawnlimit.despawn_start_range_tooltip": "Distance to start despawn."
+
+}

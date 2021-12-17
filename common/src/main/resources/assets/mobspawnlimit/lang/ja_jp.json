@@ -1,0 +1,22 @@
+{
+    "option.mobspawnlimit.subcategory_monster": "Monster",
+    "option.mobspawnlimit.subcategory_creature": "Creature",
+    "option.mobspawnlimit.subcategory_ambient": "Ambient",
+    "option.mobspawnlimit.subcategory_axolotls": "Axolotls",
+    "option.mobspawnlimit.subcategory_underground_water_creature": "Underground Water Creature",
+    "option.mobspawnlimit.subcategory_water_creature": "Water Creature",
+    "option.mobspawnlimit.subcategory_water_ambient": "Water Ambient",
+    "option.mobspawnlimit.subcategory_misc": "Misc",
+
+    "option.mobspawnlimit.capacity": "Capacity",
+    "option.mobspawnlimit.capacity_tooltip": "自然スポーンする最大数。",
+    "option.mobspawnlimit.peaceful": "Peaceful",
+    "option.mobspawnlimit.peaceful_tooltip": "ピースフル時にデスポーンするかどうか。",
+    "option.mobspawnlimit.rare": "Rare",
+    "option.mobspawnlimit.rare_tooltip": "自然スポーンするかどうか。",
+    "option.mobspawnlimit.immediate_despawn_range": "Immediate Despawn Range",
+    "option.mobspawnlimit.immediate_despawn_range_tooltip": "即時デスポーンするまでの距離。",
+    "option.mobspawnlimit.despawn_start_range": "Despawn Start Range",
+    "option.mobspawnlimit.despawn_start_range_tooltip": "デスポーンを開始するまでの距離。"
+
+}

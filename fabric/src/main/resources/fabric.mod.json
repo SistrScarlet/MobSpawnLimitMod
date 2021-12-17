@@ -3,7 +3,7 @@
   "id": "mobspawnlimit",
   "version": "${version}",
   "name": "MobSpawnLimit Mod",
-  "description": "モブのスポーン数の制限のModです。",
+  "description": "モブスポーン数制限Mod",
   "authors": [
     "Sistr"
   ],
@@ -12,13 +12,17 @@
     "sources": "https://github.com/SistrScarlet/MobSpawnLimitMod"
   },
   "license": "CC0",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/mobspawnlimit/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.sistr.mobspawnlimit.fabric.FabricModEntryPoint"
+    ],
+    "modmenu": [
+      "net.sistr.mobspawnlimit.fabric.ModMenuIntegration"
     ]
   },
+  "mixins": [ "mobspawnlimit-common.mixins.json" ],
   "depends": {
     "fabricloader": ">=0.12.11",
     "fabric": "*",

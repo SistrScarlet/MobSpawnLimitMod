@@ -8,8 +8,8 @@ modId = "mobspawnlimit"
 version = "${version}"
 displayName = "MobSpawnLimit Mod"
 authors = "Sistr"
-description = "モブのスポーン数の制限のModです。"
-#logoFile = ""
+description = "モブスポーン数制限Mod"
+logoFile = "assets/mobspawnlimit/icon.png"
 
 [[dependencies.mobspawnlimit]]
 modId = "forge"
