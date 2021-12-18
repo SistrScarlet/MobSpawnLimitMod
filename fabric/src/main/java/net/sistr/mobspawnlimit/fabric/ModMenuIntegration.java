@@ -1,7 +1,5 @@
 package net.sistr.mobspawnlimit.fabric;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
@@ -109,62 +107,6 @@ public class ModMenuIntegration implements ModMenuApi {
                     .setSaveConsumer(newValue -> MSLConfig.AMBIENT.despawnStartRange = newValue)
                     .build());
             general.addEntry(ambient.build());
-
-            SubCategoryBuilder axolotls = entryBuilder.startSubCategory(new TranslatableText("option.mobspawnlimit.subcategory_axolotls"));
-            axolotls.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.capacity"), MSLConfig.AXOLOTLS.capacity)
-                    .setDefaultValue(5)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.capacity_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.AXOLOTLS.capacity = newValue)
-                    .build());
-            axolotls.add(entryBuilder.startBooleanToggle(new TranslatableText("option.mobspawnlimit.peaceful"), MSLConfig.AXOLOTLS.peaceful)
-                    .setDefaultValue(true)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.peaceful_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.AXOLOTLS.peaceful = newValue)
-                    .build());
-            axolotls.add(entryBuilder.startBooleanToggle(new TranslatableText("option.mobspawnlimit.rare"), MSLConfig.AXOLOTLS.rare)
-                    .setDefaultValue(false)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.rare_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.AXOLOTLS.rare = newValue)
-                    .build());
-            axolotls.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.immediate_despawn_range"), MSLConfig.AXOLOTLS.immediateDespawnRange)
-                    .setDefaultValue(128)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.immediate_despawn_range_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.AXOLOTLS.immediateDespawnRange = newValue)
-                    .build());
-            axolotls.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.despawn_start_range"), MSLConfig.AXOLOTLS.despawnStartRange)
-                    .setDefaultValue(32)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.despawn_start_range_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.AXOLOTLS.despawnStartRange = newValue)
-                    .build());
-            general.addEntry(axolotls.build());
-
-            SubCategoryBuilder undergroundWaterCreature = entryBuilder.startSubCategory(new TranslatableText("option.mobspawnlimit.subcategory_underground_water_creature"));
-            undergroundWaterCreature.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.capacity"), MSLConfig.UNDERGROUND_WATER_CREATURE.capacity)
-                    .setDefaultValue(5)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.capacity_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.UNDERGROUND_WATER_CREATURE.capacity = newValue)
-                    .build());
-            undergroundWaterCreature.add(entryBuilder.startBooleanToggle(new TranslatableText("option.mobspawnlimit.peaceful"), MSLConfig.UNDERGROUND_WATER_CREATURE.peaceful)
-                    .setDefaultValue(true)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.peaceful_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.UNDERGROUND_WATER_CREATURE.peaceful = newValue)
-                    .build());
-            undergroundWaterCreature.add(entryBuilder.startBooleanToggle(new TranslatableText("option.mobspawnlimit.rare"), MSLConfig.UNDERGROUND_WATER_CREATURE.rare)
-                    .setDefaultValue(false)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.rare_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.UNDERGROUND_WATER_CREATURE.rare = newValue)
-                    .build());
-            undergroundWaterCreature.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.immediate_despawn_range"), MSLConfig.UNDERGROUND_WATER_CREATURE.immediateDespawnRange)
-                    .setDefaultValue(128)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.immediate_despawn_range_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.UNDERGROUND_WATER_CREATURE.immediateDespawnRange = newValue)
-                    .build());
-            undergroundWaterCreature.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.despawn_start_range"), MSLConfig.UNDERGROUND_WATER_CREATURE.despawnStartRange)
-                    .setDefaultValue(32)
-                    .setTooltip(new TranslatableText("option.mobspawnlimit.despawn_start_range_tooltip"))
-                    .setSaveConsumer(newValue -> MSLConfig.UNDERGROUND_WATER_CREATURE.despawnStartRange = newValue)
-                    .build());
-            general.addEntry(undergroundWaterCreature.build());
 
             SubCategoryBuilder waterCreature = entryBuilder.startSubCategory(new TranslatableText("option.mobspawnlimit.subcategory_water_creature"));
             waterCreature.add(entryBuilder.startIntField(new TranslatableText("option.mobspawnlimit.capacity"), MSLConfig.WATER_CREATURE.capacity)

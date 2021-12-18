@@ -2,7 +2,7 @@ package net.sistr.mobspawnlimit.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import dev.architectury.platform.Platform;
+import me.shedaniel.architectury.platform.Platform;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -14,8 +14,6 @@ public class MSLConfig {
     public static final SpawnGroupSetting MONSTER = new SpawnGroupSetting(70, false, false, 128, 32);
     public static final SpawnGroupSetting CREATURE = new SpawnGroupSetting(10, true, true, 128, 32);
     public static final SpawnGroupSetting AMBIENT = new SpawnGroupSetting(15, true, false, 128, 32);
-    public static final SpawnGroupSetting AXOLOTLS = new SpawnGroupSetting(5, true, false, 128, 32);
-    public static final SpawnGroupSetting UNDERGROUND_WATER_CREATURE = new SpawnGroupSetting(5, true, false, 128, 32);
     public static final SpawnGroupSetting WATER_CREATURE = new SpawnGroupSetting(5, true, false, 128, 32);
     public static final SpawnGroupSetting WATER_AMBIENT = new SpawnGroupSetting(20, true, false, 64, 32);
     public static final SpawnGroupSetting MISC = new SpawnGroupSetting(-1, true, true, 128, 32);
@@ -25,8 +23,6 @@ public class MSLConfig {
         public final SpawnGroupSetting monster = MONSTER;
         public final SpawnGroupSetting creature = CREATURE;
         public final SpawnGroupSetting ambient = AMBIENT;
-        public final SpawnGroupSetting axolotls = AXOLOTLS;
-        public final SpawnGroupSetting undergroundWaterCreature = UNDERGROUND_WATER_CREATURE;
         public final SpawnGroupSetting waterCreature = WATER_CREATURE;
         public final SpawnGroupSetting waterAmbient = WATER_AMBIENT;
         public final SpawnGroupSetting misc = MISC;
@@ -44,8 +40,6 @@ public class MSLConfig {
                 this.monster.copy(configSaveLoad.monster);
                 this.creature.copy(configSaveLoad.creature);
                 this.ambient.copy(configSaveLoad.ambient);
-                this.axolotls.copy(configSaveLoad.axolotls);
-                this.undergroundWaterCreature.copy(configSaveLoad.undergroundWaterCreature);
                 this.waterCreature.copy(configSaveLoad.waterCreature);
                 this.waterAmbient.copy(configSaveLoad.waterAmbient);
                 this.misc.copy(configSaveLoad.misc);

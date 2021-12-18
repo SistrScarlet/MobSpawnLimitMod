@@ -26,8 +26,8 @@
   "depends": {
     "fabricloader": ">=0.12.11",
     "fabric": "*",
-    "minecraft": ">=1.18.1",
-    "architectury": ">=3.2.51"
+    "minecraft": ">=1.16.5",
+    "architectury": ">=1.26.39"
   },
   "suggests": {
     "flamingo": "*"

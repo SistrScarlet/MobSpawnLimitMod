@@ -48,16 +48,20 @@ public class MixinMobSpawnLimit {
     }
 
     private MSLConfig.SpawnGroupSetting getSetting() {
-        return switch ((SpawnGroup) (Object) this) {
-            case MONSTER -> MSLConfig.MONSTER;
-            case CREATURE -> MSLConfig.CREATURE;
-            case AMBIENT -> MSLConfig.AMBIENT;
-            case AXOLOTLS -> MSLConfig.AXOLOTLS;
-            case UNDERGROUND_WATER_CREATURE -> MSLConfig.UNDERGROUND_WATER_CREATURE;
-            case WATER_CREATURE -> MSLConfig.WATER_CREATURE;
-            case WATER_AMBIENT -> MSLConfig.WATER_AMBIENT;
-            case MISC -> MSLConfig.MISC;
-        };
+        switch ((SpawnGroup) (Object) this) {
+            case MONSTER:
+                return MSLConfig.MONSTER;
+            case CREATURE:
+                return MSLConfig.CREATURE;
+            case AMBIENT:
+                return MSLConfig.AMBIENT;
+            case WATER_CREATURE:
+                return MSLConfig.WATER_CREATURE;
+            case WATER_AMBIENT:
+                return MSLConfig.WATER_AMBIENT;
+            default:
+                return MSLConfig.MISC;
+        }
     }
 
 }
